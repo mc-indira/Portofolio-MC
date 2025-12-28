@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC INDIRA | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth; 
+            background-color: #0f1115; 
+            color: #ffffff; 
+        }
+        
+        .hero-gradient { 
+            background: radial-gradient(circle at top right, #ff0000, transparent 55%), 
+                        radial-gradient(circle at bottom left, #7f0000, transparent 50%); 
+        }
+
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(234, 179, 8, 0.3); 
+        }
+
+        .highlight-name { 
+            color: #ffcc00; 
+            text-shadow: 0 0 30px rgba(255, 204, 0, 0.6); 
+            font-weight: 800; 
+        }
+
+        .profile-img-container { 
+            width: 320px; 
+            mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%); 
+        }
+
+        .modal { display: none; position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 17, 21, 0.98); backdrop-filter: blur(15px); }
+        .modal-content { background: #1a0202; margin: 10% auto; padding: 40px; border-radius: 30px; max-width: 600px; border: 2px solid #ffcc00; box-shadow: 0 0 40px rgba(255, 0, 0, 0.3); }
+        
+        .gold-text { color: #ffcc00; }
+        .vivid-red-bg { background: linear-gradient(45deg, #ff0000, #b91c1c); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 glass py-4 px-6 border-b border-white/5">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="text-2xl font-black text-white uppercase tracking-tighter italic">MC <span class="gold-text">INDIRA</span></span>
+            <div class="space-x-8 text-xs font-bold uppercase tracking-widest hidden md:block">
+                <a href="#about" class="hover:text-yellow-500 transition">About</a>
+                <a href="#skills" class="hover:text-yellow-500 transition">Skills</a>
+                <a href="#services" class="hover:text-yellow-500 transition">Services</a>
+                <a href="#experience" class="hover:text-yellow-500 transition">Experience</a>
+                <a href="#gallery" class="hover:text-yellow-500 transition">Gallery</a>
+                <a href="#contact" class="hover:text-yellow-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 hero-gradient">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-6xl md:text-8xl font-extrabold leading-tight mb-4 uppercase text-white italic">
+                    Mudrikah <span class="highlight-name block">INDIRA</span> Lisaw
+                </h1>
+                <p class="text-xl text-slate-300 mb-8 italic tracking-widest font-light">Master of Ceremony | Professional Host | Moderator</p>
+                <a href="https://wa.me/6285240621689" class="vivid-red-bg hover:scale-105 text-white px-10 py-4 rounded-full font-black uppercase tracking-widest transition shadow-2xl inline-flex items-center gap-3 border border-yellow-500/30">
+                    <i class="fab fa-whatsapp text-2xl"></i> Hubungi Indira
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <div class="profile-img-container">
+                    <img src="profil.JPG" alt="Indira Lisaw" class="w-full object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 container mx-auto px-6">
+        <div class="glass p-10 md:p-16 rounded-[3rem]">
+            <h2 class="text-3xl font-black mb-8 gold-text uppercase italic tracking-tighter">The Stage Specialist</h2>
+            <p class="text-lg md:text-2xl leading-relaxed text-slate-200 font-light">
+                Dikenal dengan pembawaan yang <span class="gold-text font-bold italic">energik, cerdas, dan elegan</span>, saya adalah MC yang berfokus pada keberhasilan narasi acara Anda. Telah dipercaya memandu <span class="font-bold text-white">50+ event</span>—dari skala korporat hingga panggung hiburan masif—saya memastikan setiap audiens merasa terlibat dan setiap detik acara berjalan dengan presisi yang sempurna.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-black mb-16 uppercase text-white italic">Core <span class="gold-text">Skills</span></h2>
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                <i class="fas fa-child text-4xl gold-text mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">Interaksi Anak</h3>
+                <p class="text-xs text-slate-400 italic">Menciptakan keceriaan maksimal dengan games edukatif yang seru.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                <i class="fas fa-users text-4xl gold-text mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">Crowd Control</h3>
+                <p class="text-xs text-slate-400 italic">Otoritas panggung yang kuat untuk mengelola audiens skala besar.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                <i class="fas fa-bullhorn text-4xl gold-text mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">Persuasif Host</h3>
+                <p class="text-xs text-slate-400 italic">Mampu mengomunikasikan pesan brand klien secara natural dan menarik.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-yellow-500">
+                <i class="fas fa-clock text-4xl gold-text mb-4"></i>
+                <h3 class="font-bold text-xl mb-2">Timing Presisi</h3>
+                <p class="text-xs text-slate-400 italic">Manajemen rundown yang sangat disiplin untuk kelancaran acara.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black mb-16 uppercase italic text-white">Services & <span class="gold-text">Rate Card</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div onclick="openModal('Private Event', 'Ciptakan suasana hangat yang tak terlupakan untuk keluarga dan orang terdekat. Cocok bagi Anda yang ingin acara terasa lebih eksklusif, intim, namun tetap ceria.')" class="glass p-8 rounded-3xl border-b-4 border-yellow-600 cursor-pointer hover:bg-red-600/10 transition">
+                    <h3 class="font-black text-xl gold-text uppercase italic">Private Event</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase">Ulang Tahun, Aqiqah, Syukuran</p>
+                    <p class="text-2xl font-black mt-4">IDR 450K</p>
+                </div>
+                <div onclick="openModal('Wedding', 'Pemandu momen sakral Anda dengan sentuhan elegan dan penuh keanggunan. Saya memastikan setiap prosesi adat dan resepsi berjalan sakral sesuai harapan keluarga.')" class="glass p-8 rounded-3xl border-b-4 border-yellow-600 cursor-pointer hover:bg-red-600/10 transition">
+                    <h3 class="font-black text-xl gold-text uppercase italic">Wedding</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase">Akad, Resepsi, Mapacci</p>
+                    <p class="text-2xl font-black mt-4">450K - 550K</p>
+                </div>
+                <div onclick="openModal('Corporate', 'Meningkatkan reputasi brand atau lembaga Anda melalui gaya bicara profesional yang kredibel. Solusi tepat untuk seminar, workshop, hingga launching produk yang butuh kesan formal.')" class="glass p-8 rounded-3xl border-b-4 border-yellow-600 cursor-pointer hover:bg-red-600/10 transition">
+                    <h3 class="font-black text-xl gold-text uppercase italic">Corporate</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase">Seminar, Workshop, Talkshow</p>
+                    <p class="text-2xl font-black mt-4">IDR 600K</p>
+                </div>
+                <div onclick="openModal('Host Music', 'Ledakan energi maksimal untuk panggung hiburan Anda! Gaya interaksi yang dinamis dan kemampuan menjaga crowd tetap antusias adalah kunci dari setiap event musik.')" class="glass p-8 rounded-3xl border-b-4 border-yellow-600 cursor-pointer hover:bg-red-600/10 transition">
+                    <h3 class="font-black text-xl gold-text uppercase italic">Host Music</h3>
+                    <p class="text-xs text-slate-400 mt-2 uppercase">Event Musik & Panggung Hiburan</p>
+                    <p class="text-2xl font-black mt-4">600K - 700K</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 container mx-auto px-6">
+        <h2 class="text-3xl font-black mb-12 uppercase border-l-8 border-red-600 pl-6 text-white italic">Professional <span class="gold-text">Experience</span></h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl border-l-2 border-yellow-500/50">
+                <h3 class="text-2xl font-bold gold-text italic mb-2">Carnival Bike Fair</h3>
+                <p class="text-xs text-red-500 mb-4 font-black uppercase italic">Mall Panakkukang | Nov 2025</p>
+                <p class="text-sm italic text-slate-300">Menjadi ujung tombak promosi selama 7 hari dalam pameran besar se-Makassar.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-l-2 border-yellow-500/50">
+                <h3 class="text-2xl font-bold gold-text italic mb-2">PKKMB PNUP 2025</h3>
+                <p class="text-xs text-red-500 mb-4 font-black uppercase italic">Auditorium Kampus | Agu 2025</p>
+                <p class="text-sm italic text-slate-300">Memandu 2.000 mahasiswa dalam rangkaian acara formal dan hiburan yang masif.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-l-2 border-yellow-500/50">
+                <h3 class="text-2xl font-bold gold-text italic mb-2">Family Gathering</h3>
+                <p class="text-xs text-red-500 mb-4 font-black uppercase italic">Hotel Myko Makassar | Jan 2025</p>
+                <p class="text-sm italic text-slate-300">Menghidupkan suasana ceria dengan berbagai rangkaian interaksi kelompok yang inklusif.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-l-2 border-yellow-500/50">
+                <h3 class="text-2xl font-bold gold-text italic mb-2">Panggung Gembira</h3>
+                <p class="text-xs text-red-500 mb-4 font-black uppercase italic">MAN 3 Makassar | Sep 2022</p>
+                <p class="text-sm italic text-slate-300">Membawakan panggung hiburan siswa dengan gaya komunikasi yang sangat dinamis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-black/20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black mb-16 uppercase italic text-white">Event <span class="gold-text">Gallery</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="aspect-square glass rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition border border-white/5">
+                    <img src="g1.JPG" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square glass rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition border border-white/5">
+                    <img src="g2.JPG" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square glass rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition border border-white/5">
+                    <img src="g3.JPG" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square glass rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition border border-white/5">
+                    <img src="g4.JPG" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 text-center border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black mb-16 uppercase italic text-white tracking-tighter">Ready to <span class="gold-text">Collab?</span></h2>
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-20 items-stretch">
+                <a href="https://wa.me/6285240621689" target="_blank" class="glass p-8 rounded-3xl border-2 border-green-600/20 hover:bg-green-600/10 transition flex items-center gap-5">
+                    <i class="fab fa-whatsapp text-5xl text-green-500"></i>
+                    <div class="text-left font-bold">
+                        <p class="text-xs text-slate-400 uppercase">WhatsApp</p>
+                        <p class="text-lg">+62 852 4062 1689</p>
+                    </div>
+                </a>
+                <a href="https://instagram.com/indiralisaww" target="_blank" class="glass p-8 rounded-3xl border-2 border-red-600/20 hover:bg-red-600/10 transition flex items-center gap-5">
+                    <i class="fab fa-instagram text-5xl text-pink-500"></i>
+                    <div class="text-left font-bold">
+                        <p class="text-xs text-slate-400 uppercase">Instagram</p>
+                        <p class="text-lg">@indiralisaww</p>
+                    </div>
+                </a>
+                <a href="mailto:mc.indiralisaw@gmail.com" class="glass p-8 rounded-3xl border-2 border-yellow-500/20 hover:bg-yellow-500/10 transition flex items-center gap-5">
+                    <i class="fas fa-envelope text-5xl gold-text"></i>
+                    <div class="text-left font-bold">
+                        <p class="text-xs text-slate-400 uppercase">Email</p>
+                        <p class="text-sm">mc.indiralisaw@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+            <p class="text-white/20 text-[10px] font-black uppercase tracking-[1em]">Mudrikah Indira Lisaw &copy; 2025 | MC Professional Makassar</p>
+        </div>
+    </footer>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content text-center">
+            <h2 id="modalTitle" class="text-3xl font-black gold-text mb-6 uppercase italic"></h2>
+            <p id="modalDesc" class="text-slate-100 mb-10 italic leading-relaxed text-lg"></p>
+            <div class="flex flex-col gap-4">
+                <a href="https://wa.me/6285240621689" class="vivid-red-bg text-white py-5 rounded-full font-black uppercase tracking-widest border-2 border-yellow-500 shadow-2xl">Book Now</a>
+                <button onclick="closeModal()" class="text-slate-400 text-xs font-bold uppercase mt-4 tracking-widest">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('serviceModal').style.display = 'block';
+        }
+        function closeModal() { document.getElementById('serviceModal').style.display = 'none'; }
+        window.onclick = function(event) { if (event.target == document.getElementById('serviceModal')) closeModal(); }
+    </script>
+
+</body>
+</html>
